@@ -1,5 +1,5 @@
 //
-//  VLODEModelSolverLibrary.h
+//  VLMatrix.h
 //  VLODEModelSolverLibrary
 //
 //  Created by Jeffrey Varner on 9/27/13.
@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface VLODEModelSolverLibrary : NSObject
+@interface VLMatrix : NSObject
 {
     
 }
+
+// static accesor method -
++(VLMatrix *)matrix;
+
+
 
 @end

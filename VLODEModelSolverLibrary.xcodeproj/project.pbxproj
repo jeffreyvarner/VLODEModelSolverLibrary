@@ -16,6 +16,8 @@
 		AD4D2D4F17F5EC6C00EDB0F7 /* libVLODEModelSolverLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4D2D3717F5EC6C00EDB0F7 /* libVLODEModelSolverLibrary.a */; };
 		AD4D2D5517F5EC6C00EDB0F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD4D2D5317F5EC6C00EDB0F7 /* InfoPlist.strings */; };
 		AD4D2D5717F5EC6C00EDB0F7 /* VLODEModelSolverLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4D2D5617F5EC6C00EDB0F7 /* VLODEModelSolverLibraryTests.m */; };
+		AD4D2D6317F5ECDE00EDB0F7 /* VLVector.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4D2D6217F5ECDE00EDB0F7 /* VLVector.m */; };
+		AD4D2D6617F5ECF600EDB0F7 /* VLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4D2D6517F5ECF600EDB0F7 /* VLMatrix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		AD4D2D5217F5EC6C00EDB0F7 /* VLODEModelSolverLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VLODEModelSolverLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		AD4D2D5417F5EC6C00EDB0F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD4D2D5617F5EC6C00EDB0F7 /* VLODEModelSolverLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLODEModelSolverLibraryTests.m; sourceTree = "<group>"; };
+		AD4D2D6117F5ECDE00EDB0F7 /* VLVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLVector.h; sourceTree = "<group>"; };
+		AD4D2D6217F5ECDE00EDB0F7 /* VLVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLVector.m; sourceTree = "<group>"; };
+		AD4D2D6417F5ECF600EDB0F7 /* VLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMatrix.h; sourceTree = "<group>"; };
+		AD4D2D6517F5ECF600EDB0F7 /* VLMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMatrix.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 		AD4D2D3C17F5EC6C00EDB0F7 /* VLODEModelSolverLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				AD4D2D6017F5ECAB00EDB0F7 /* foundation */,
 				AD4D2D3F17F5EC6C00EDB0F7 /* VLODEModelSolverLibrary.h */,
 				AD4D2D4117F5EC6C00EDB0F7 /* VLODEModelSolverLibrary.m */,
 				AD4D2D3D17F5EC6C00EDB0F7 /* Supporting Files */,
@@ -141,6 +148,17 @@
 				AD4D2D5317F5EC6C00EDB0F7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD4D2D6017F5ECAB00EDB0F7 /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				AD4D2D6117F5ECDE00EDB0F7 /* VLVector.h */,
+				AD4D2D6217F5ECDE00EDB0F7 /* VLVector.m */,
+				AD4D2D6417F5ECF600EDB0F7 /* VLMatrix.h */,
+				AD4D2D6517F5ECF600EDB0F7 /* VLMatrix.m */,
+			);
+			name = foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4D2D6617F5ECF600EDB0F7 /* VLMatrix.m in Sources */,
+				AD4D2D6317F5ECDE00EDB0F7 /* VLVector.m in Sources */,
 				AD4D2D4217F5EC6C00EDB0F7 /* VLODEModelSolverLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
