@@ -13,4 +13,8 @@
     
 }
 
+// public method
++(VLODEModelSolverLibrary *)buildSolverInstance;
+
+
 @end

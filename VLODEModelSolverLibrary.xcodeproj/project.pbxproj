@@ -33,13 +33,13 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		AD4D2D3517F5EC6C00EDB0F7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
 				AD4D2D4017F5EC6C00EDB0F7 /* VLODEModelSolverLibrary.h in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -429,6 +429,7 @@
 				AD4D2D5C17F5EC6C00EDB0F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD4D2D5D17F5EC6C00EDB0F7 /* Build configuration list for PBXNativeTarget "VLODEModelSolverLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +438,7 @@
 				AD4D2D5F17F5EC6C00EDB0F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
