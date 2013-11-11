@@ -47,7 +47,32 @@
         return;
     }
     
+    // get problem specific information from the model proxy -
+    float local_start_time = modelProxy.start_time;
+    float local_stop_time = modelProxy.stop_time;
+    float local_step_size = modelProxy.step_size;
+    float current_time = local_start_time;
+    VLVector *local_state_vector = modelProxy.myStateVector;
     
+    // main simulation loop -
+    BOOL LOOP_FLAG = YES;
+    while (LOOP_FLAG)
+    {
+        // update state
+        // ...
+        
+        // update time -
+        current_time = current_time + local_step_size;
+        
+        // call the completion handler -
+        completionHandler(current_time,local_state_vector);
+        
+        // should we go around again?
+        if (current_time>=local_stop_time)
+        {
+            LOOP_FLAG = NO;
+        }
+    }
 }
 
 #pragma mark - problem setup

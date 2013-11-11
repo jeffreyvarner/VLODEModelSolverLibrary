@@ -8,6 +8,30 @@
 
 #import "VLODEModelProxy.h"
 
+@interface VLODEModelProxy ()
+
+-(void)setup;
+-(void)cleanMyMemory;
+
+@end
+
 @implementation VLODEModelProxy
+
+
+-(void)dealloc
+{
+    [self cleanMyMemory];
+}
+
+#pragma mark - private
+-(void)setup
+{
+    
+}
+
+-(void)cleanMyMemory
+{
+    
+}
 
 @end
