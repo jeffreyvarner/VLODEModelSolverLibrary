@@ -58,7 +58,7 @@
     BOOL LOOP_FLAG = YES;
     while (LOOP_FLAG)
     {
-        // update state
+        // update state -
         // ...
         
         // update time -
