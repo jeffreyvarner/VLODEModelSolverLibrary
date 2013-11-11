@@ -35,6 +35,21 @@
     [self cleanMyMemory];
 }
 
+#pragma mark - public method
+-(void)calculateNextStateForProblem:(VLODEModelProxy *)modelProxy
+              withCompletionHandler:(VLSolverDidFinishStepCompletionHandler)completionHandler
+{
+    
+    // ok, so if we do *not* have the model proxy -or- the completion handler,
+    // then return
+    if (modelProxy == nil || completionHandler == nil)
+    {
+        return;
+    }
+    
+    
+}
+
 #pragma mark - problem setup
 -(void)setup
 {

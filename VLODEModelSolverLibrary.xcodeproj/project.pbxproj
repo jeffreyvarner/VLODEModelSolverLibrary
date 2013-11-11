@@ -18,6 +18,7 @@
 		AD4D2D5717F5EC6C00EDB0F7 /* VLODEModelSolverLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4D2D5617F5EC6C00EDB0F7 /* VLODEModelSolverLibraryTests.m */; };
 		AD4D2D6317F5ECDE00EDB0F7 /* VLVector.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4D2D6217F5ECDE00EDB0F7 /* VLVector.m */; };
 		AD4D2D6617F5ECF600EDB0F7 /* VLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4D2D6517F5ECF600EDB0F7 /* VLMatrix.m */; };
+		ADE1DB0D18305E3500DE6021 /* VLODEModelProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE1DB0C18305E3500DE6021 /* VLODEModelProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		AD4D2D6217F5ECDE00EDB0F7 /* VLVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLVector.m; sourceTree = "<group>"; };
 		AD4D2D6417F5ECF600EDB0F7 /* VLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMatrix.h; sourceTree = "<group>"; };
 		AD4D2D6517F5ECF600EDB0F7 /* VLMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMatrix.m; sourceTree = "<group>"; };
+		ADE1DB0B18305E3500DE6021 /* VLODEModelProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLODEModelProxy.h; sourceTree = "<group>"; };
+		ADE1DB0C18305E3500DE6021 /* VLODEModelProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLODEModelProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,7 @@
 		AD4D2D3C17F5EC6C00EDB0F7 /* VLODEModelSolverLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				ADE1DB0A18305DE500DE6021 /* stepper */,
 				AD4D2D6017F5ECAB00EDB0F7 /* foundation */,
 				AD4D2D3F17F5EC6C00EDB0F7 /* VLODEModelSolverLibrary.h */,
 				AD4D2D4117F5EC6C00EDB0F7 /* VLODEModelSolverLibrary.m */,
@@ -159,6 +163,15 @@
 				AD4D2D6517F5ECF600EDB0F7 /* VLMatrix.m */,
 			);
 			name = foundation;
+			sourceTree = "<group>";
+		};
+		ADE1DB0A18305DE500DE6021 /* stepper */ = {
+			isa = PBXGroup;
+			children = (
+				ADE1DB0B18305E3500DE6021 /* VLODEModelProxy.h */,
+				ADE1DB0C18305E3500DE6021 /* VLODEModelProxy.m */,
+			);
+			name = stepper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD4D2D6617F5ECF600EDB0F7 /* VLMatrix.m in Sources */,
+				ADE1DB0D18305E3500DE6021 /* VLODEModelProxy.m in Sources */,
 				AD4D2D6317F5ECDE00EDB0F7 /* VLVector.m in Sources */,
 				AD4D2D4217F5EC6C00EDB0F7 /* VLODEModelSolverLibrary.m in Sources */,
 			);
